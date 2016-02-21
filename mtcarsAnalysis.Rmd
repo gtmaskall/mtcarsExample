@@ -1,0 +1,37 @@
+---
+title: "The best mtcars analysis ever!"
+author: "Guy Maskall"
+date: '`r format(Sys.Date(), "%d %B, %Y")`'
+---
+
+# Introduction
+
+We introduce a never-before-seen data set and perform the best
+ever statistical analysis on it.
+
+# The data
+
+It's something to do with cars:
+
+```{r, mtcarsSummary}
+summary(mtcars)
+```
+
+# The best plot in the world
+
+The summary of years of analysis is this relationship between
+mpg and weight.
+
+```{r, mpgwt, fig.width = 12, fig.height = 8}
+plot(mpg ~ wt, mtcars)
+```
+
+Okay okay, I'll do something more colourful.
+
+```{r, ggplotColour, fig.width = 12, fig.height = 8}
+library(ggplot2)
+ghist <- ggplot(data = mtcars) + 
+            geom_histogram(aes(x = mpg, fill = as.factor(cyl)), binwidth = 1) +
+            labs(fill = "cyl")
+print(ghist)
+```

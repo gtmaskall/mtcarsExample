@@ -20,11 +20,12 @@ already, so just want to create an empty github repo.
 1. cd to my source directory
 2. initialize the repo: `git init`
 3. add my files: `git add .`
-    your exact commands may vary as you iterately add files,
+  your exact commands may vary as you iterately add files,
 but we expect you to know the basics of adding files to
 git by now
 4. commit the files: `git commit`, and
-5. push to github: `git push origin master`
+5. add the remote repository: `git remote add origin https://github.com/blah/something.git`
+5. push to github: `git push -u origin master`
 
 So now, you've got your files safely up on github. But, erm, weren't
 we talking about publishing your html report? NB: we're assuming the

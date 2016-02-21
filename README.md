@@ -20,7 +20,7 @@ already, so just want to create an empty github repo.
 1. cd to my source directory
 2. initialize the repo: `git init`
 3. add my files: `git add .`
-  your exact commands may vary as you iterately add files,
+    * your exact commands may vary as you iterately add files,
 but we expect you to know the basics of adding files to
 git by now
 4. commit the files: `git commit`, and

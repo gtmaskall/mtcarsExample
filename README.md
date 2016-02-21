@@ -30,3 +30,10 @@ git by now
 So now, you've got your files safely up on github. But, erm, weren't
 we talking about publishing your html report? NB: we're assuming the
 above files actually included such an html report!
+
+### gh-pages
+
+Okay, to read more, you're going to have to look back up the page.
+See the list of files in the repo? Look just above for the
+"Branch: master" button. Click it and select the "gh-pages" branch
+and I'll see you later...

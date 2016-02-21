@@ -48,6 +48,7 @@ Next, simply:
 5. You should now be done
 
 I then verified, by doing:
+
 1. in your local repo, execute `git checkout -b gh-pages`
 2. you should then get a response `Switched to a new branch 'gh-pages'`
 3. if you then run `git push origin gh-pages`, you should get `Everything up-to-date`

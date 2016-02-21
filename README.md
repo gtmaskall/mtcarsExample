@@ -5,9 +5,11 @@
 Okay, so you've done a great little analysis and are pushing it to 
 your github repo. Fine. But wait, your output is an html file
 with really cool and colourful plots etc. and in your github
-repo it only appears as a plain old html source file. What you
+repo it only appears as a plain old html source file. Click on
+the html file you see above (on github) to see what I mean!
+What you
 really want is to push it to github.io where people can view
-it for the proper web page it is.
+it, all marked up and rendered for the proper web page it is.
 
 ## Steps
 
@@ -56,6 +58,15 @@ I then verified, by doing:
     * `git remote -v`
     * and `git status` - this particularly should confirm you're on your gh-pages branch
 
+#### A side-note about branches
+
+In my local repo, I:
+
+1. executed `git checkout -b a_test_branch`
+2. followed by `git push origin a_test_branch`
+
+And this created a new branch, which you should also see on the github repo.
+
 ## URL
 
 You know where this repo is on github, because you're reading the README.md file. So where's
@@ -68,4 +79,6 @@ repo, and then the name of your output html file.
 In short:
 
 * Create a gh-pages branch containing your compiled rmarkdown report
+    * the gh-pages branch is just a special branch that causes your html to magically
+be published on github.io
 * Publish the URL from github.io! `https://username.github.io/reponame/report.html`
